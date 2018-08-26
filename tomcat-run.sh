@@ -1,0 +1,1 @@
+exec /root/jenkins/apache-tomcat-8.5.31/bin/catalina.sh run
