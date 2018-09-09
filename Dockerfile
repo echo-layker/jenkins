@@ -3,7 +3,7 @@ FROM jenkins/jenkins:lts
 USER root
 COPY sources.list /etc/apt/sources.list
 RUN apt-get update -y && apt-get install -y maven && apt-get install -y git
-RUN apt-get install  -y ant && apt-get install -y  jmeter
+RUN apt-get install  -y ant && apt-get install -y  jmeter && apt-get autoclean && apt-get clean
 # RUN apt-get install jmeter
 # WORKDIR /usr/local/
 # COPY apache-jmeter-4.0.tgz /usr/local/
